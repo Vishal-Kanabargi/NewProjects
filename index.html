@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="pageTitle">Portfolio</title>
+    <meta id="pageDescription" name="description" content="Senior Software Developer portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+
+    <header class="hero" id="top">
+      <nav class="nav container">
+        <a class="brand" href="#top" id="brandName">Your Name</a>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow" id="heroRole">Senior Software Developer</p>
+          <p class="experience-badge" id="heroExperience">8+ years experience</p>
+          <h1 id="heroHeadline">Designing high-scale API ecosystems and reliable backend platforms.</h1>
+          <p class="intro" id="heroSummary"></p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn primary">Let's Connect</a>
+            <a href="resume.pdf" class="btn secondary" download>Download Resume</a>
+          </div>
+        </div>
+
+        <aside class="hero-panel card reveal">
+          <p class="panel-label">Specialization</p>
+          <h3>APIs • Integrations • Cloud Backends</h3>
+          <p>
+            Building reliable platforms with secure API gateways, event-driven architecture, and product-focused
+            frontend delivery.
+          </p>
+        </aside>
+      </div>
+    </header>
+
+    <main>
+      <section class="section container" id="about">
+        <div class="section-kicker">01 / About</div>
+        <h2>Professional Summary</h2>
+        <div class="card">
+          <p id="aboutText"></p>
+        </div>
+      </section>
+
+      <section class="section container" id="experience">
+        <div class="section-kicker">02 / Experience</div>
+        <h2>Experience Highlights</h2>
+        <div class="timeline" id="experienceList"></div>
+      </section>
+
+      <section class="section container" id="skills">
+        <div class="section-kicker">03 / Skills</div>
+        <h2>Core Skills</h2>
+        <div class="skills-grid" id="skillsGrid"></div>
+      </section>
+
+      <section class="section container" id="projects">
+        <div class="section-kicker">04 / Projects</div>
+        <div class="section-head">
+          <h2>API + Product Project Portfolio</h2>
+          <p class="muted">Security-focused API and production-ready product design/build ideas — add links later.</p>
+        </div>
+        <div class="project-grid" id="projectGrid"></div>
+      </section>
+
+      <section class="section container" id="contact">
+        <div class="section-kicker">05 / Contact</div>
+        <h2>Contact</h2>
+        <p>
+          Open for senior engineering opportunities, architecture consulting, and API modernization projects.
+        </p>
+        <ul class="contact-list card">
+          <li><strong>Email:</strong> <span id="contactEmail"></span></li>
+          <li><strong>LinkedIn:</strong> <span id="contactLinkedIn"></span></li>
+          <li><strong>GitHub:</strong> <span id="contactGitHub"></span></li>
+          <li><strong>Location:</strong> <span id="contactLocation"></span></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-wrap">
+        <p>© <span id="year"></span> <span id="footerName">Your Name</span>. All rights reserved.</p>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <script src="profile.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
